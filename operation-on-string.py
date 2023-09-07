@@ -24,3 +24,6 @@ Userinput=input("Enter your chooised Alphabets:\n ")
 for i in Userinput:
     print(i)
 
+# Quiz type for slicing
+no="KIGHT"
+print(no[-4:-2])
