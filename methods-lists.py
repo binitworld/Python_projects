@@ -45,7 +45,7 @@ deva=['Shivji','Vishnu','Ganesha','Ram']
 
 devi=deva.copy()
 print(devi)
-
+# 
 
 # Method - 6 insert()
 devi=['Parvati','Laxmi','Sraswati','Sita']
