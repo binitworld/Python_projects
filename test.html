@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change color practice</title>
+</head>
+
+<body>
+    <h1 style="color: rgb(213, 123, 5); text-align: center">Hey there guys! This is simple project by me </h1>
+    <style>
+        body {
+            background-color: #40283e;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #colorDiv {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 10px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+
+    <div id="colorDiv"></div>
+    <button id="changeColorButton">Change Color</button>
+    <footer>
+        <p>&copy; 2024 Binit Bhushan. All rights reserved.</p>
+    </footer>
+    <script>
+        const colorDiv = document.getElementById("colorDiv");
+        const changeColorButton = document.getElementById("changeColorButton");
+
+        const colors = ["red", "green", "blue", "yellow", "orange", "purple"];
+        let colorIndex = 0;
+
+        changeColorButton.addEventListener("click", () => {
+            colorIndex = (colorIndex + 1) % colors.length;
+            colorDiv.style.backgroundColor = colors[colorIndex];
+        });
+    </script>
+</body>
+
+</html>
