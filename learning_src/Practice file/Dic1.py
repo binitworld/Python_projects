@@ -7,3 +7,17 @@ for info, doc in info.items():
 
 
 # Write a function that takes a dictionary as input and returns a list of all the keys in the dictionary.
+# a = input(" Enter the value of dictionaries :")
+
+# a={
+#     "":""
+# }
+
+# print (a)
+a = {
+    "":""
+}
+
+keys = get_keys(a)
+
+print(keys)
