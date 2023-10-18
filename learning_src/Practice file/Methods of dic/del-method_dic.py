@@ -11,3 +11,14 @@ del Profile["Facebook"]
 print(Profile)
 del Profile["Github"]
 print(Profile)
+
+
+
+Tasking={
+    "Insta":"Ram", "Twitter":"Muskan","Github":"Hitesh","Facebook":"Riya"
+}
+
+print(Tasking)
+
+del Tasking
+print(Tasking)
